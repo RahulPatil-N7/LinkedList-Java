@@ -15,12 +15,12 @@ public class LinkedListMain {
 		
 		//using list object of LinkedList to call node operations
 		list.addNode(firstNode);
+		list.addNode(secondNode);
 		list.addNode(thirdNode);
 		list.display(firstNode);
-		
-		System.out.println("\nInserting 30 between 56 & 70.");
-		list.insert(firstNode, secondNode);       //30 inserted between 56 & 70
-		list.display(firstNode);
+		System.out.println("\nAfter Deleting the first element.");
+		list.pop();         //deleting first node of linked list
+		list.display(secondNode);
 	}
 
 }
