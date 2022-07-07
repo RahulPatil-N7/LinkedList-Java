@@ -6,16 +6,20 @@ public class LinkedListMain {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Lets Create Linked List to add 56,30 & 70!\n");
+		System.out.println("Lets Create Linked List !\n");
 		
 		LinkedList list = new LinkedList();
 		Node<Integer> firstNode = new Node<Integer>(56);
 		Node<Integer> secondNode = new Node<Integer>(30);
 		Node<Integer> thirdNode = new Node<Integer>(70);
 		
-		//appending nodes 
-		firstNode.setNext(secondNode);      //30 is appended to 56
-		secondNode.setNext(thirdNode);      //70 is appended to 30
+		//using list object of LinkedList to call node operations
+		list.addNode(firstNode);
+		list.addNode(thirdNode);
+		list.display(firstNode);
+		
+		System.out.println("\nInserting 30 between 56 & 70.");
+		list.insert(firstNode, secondNode);       //30 inserted between 56 & 70
 		list.display(firstNode);
 	}
 
