@@ -19,6 +19,13 @@ public class LinkedList {
 		size++;
 	}
 	
+	//method to insert node in linked list 
+	void insert(INode myNode,INode newNode) {
+		INode temp = myNode.getNext();
+		myNode.setNext(newNode);
+		newNode.setNext(temp);
+	}
+	
 	//method to display linked list
 	void display(INode head) {
 		INode current = head ;
