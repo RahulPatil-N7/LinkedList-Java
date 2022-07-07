@@ -26,6 +26,16 @@ public class LinkedList {
 		newNode.setNext(temp);
 	}
 	
+	void pop() {
+		if (head == null) {
+			System.out.println("Linked list is empty");
+		}
+		else {
+			head.next = head; 
+		}
+		
+	}
+	
 	//method to display linked list
 	void display(INode head) {
 		INode current = head ;
