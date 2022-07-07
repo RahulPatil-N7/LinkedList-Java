@@ -13,10 +13,9 @@ public class LinkedListMain {
 		Node<Integer> secondNode = new Node<Integer>(30);
 		Node<Integer> thirdNode = new Node<Integer>(70);
 		
-		//Using list object of LinkeList to call Node operations
-		list.addNode(firstNode);
-		list.addNode(secondNode);
-		list.addNode(thirdNode);
+		//appending nodes 
+		firstNode.setNext(secondNode);      //30 is appended to 56
+		secondNode.setNext(thirdNode);      //70 is appended to 30
 		list.display(firstNode);
 	}
 
